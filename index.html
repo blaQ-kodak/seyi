@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rhella's Treat</title>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="header">
+            <h6>RHELLA'S TREAT</h6>
+        </div>
+    </div>
+    <nav class="nav-bars">
+        <a href="#" class="hide-desktop">
+            <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+        </a>
+
+        <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <h2>WELCOME TO RHELLA'S TREAT</h2>
+    <p class="subhead">One bite is all it takes</p>
+    <div class="blue-container">
+        <div class="container">
+            <h4>Our treats</h4>
+            <ul>
+                <li>
+                    <img src="images/pexels-abhinav-goswami-291528.jpg" alt="chocolate cake">
+                    <p>Chocolate cake</p>
+                </li>
+                <li>
+                    <img src="images/image.jpg" alt="cupcakes">
+                    <p>Cupcakes</p>
+                </li>
+                <li class="ice">
+                    <img src="images/pexels-lukas-1352278.jpg" alt="ice cream">
+                    <p>Ice Cream</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <h4>Reviews</h4>
+            <ul>
+                <li>
+                    <img src="images/user-1.png" alt="sniper">
+                    <p>One of the best places to get your delicious cakes</p>
+                    <figcaption>Sniper</figcaption>
+                </li>
+                <li>
+                    <img src="images/user-2.png" alt="kravo">
+                    <p>Best cupcake i've ever had was from rhellas's i'll recommend</p>
+                    <figcaption>Kravo</figcaption>
+                </li>
+                <li>
+                    <img src="images/user-3.png" alt="bukola">
+                    <p>Reliable and swift delivery, plus delicious ice-creams</p>
+                    <figcaption>Bukola</figcaption>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Place your order now!</h2>
+        <a href="#" class="cta">Order</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p class="address">Progress Hostel Bdpa, Edo State Nigeria</p>
+            <ul class="socials">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+    });
+
+</script>
+</html>
